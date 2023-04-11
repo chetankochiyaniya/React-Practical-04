@@ -1,3 +1,71 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(211, 211, 211);
+  padding: 25px;
+  min-height: 100vh;
 }
+.user-list-main-container {
+  background-color: rgb(245, 245, 245);
+  max-width: 900px;
+  padding: 25px;
+  border: 1px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px -8px;
+  display: flex;
+  height: -webkit-fill-available;
+}
+.user-list {
+  max-width: 620px;
+}
+.user-profile {
+  width: 200px;
+}
+@media screen and (max-width: 850px) {
+  .user-list-main-container {
+    display: flex;
+  }
+  .user-list {
+    align-content: center;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .user-list-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .user-list {
+    align-content: center;
+    width: 300px;
+    overflow: auto;
+  }
+  .user-list-sm {
+    height: 250px;
+  }
+  .user-list-container {
+    width: 300px;
+  }
+}
+
+/* Title */
+
+.title {
+  display: flex;
+  font-size: 15px;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.645);
+  font-weight: 600;
+  justify-content: space-evenly;
+  width: 620px;
+}
+.status {
+  margin-left: 70px;
+}
+@media screen and (max-width: 850px) {
+  .title {
+    display: none;
+  }
+}
+
