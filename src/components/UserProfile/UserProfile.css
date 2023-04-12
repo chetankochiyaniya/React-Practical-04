@@ -65,7 +65,7 @@
 .progressBar {
   height: 5px;
   width: 100%;
-  background-color: rgb(255, 220, 154);
+  background-color: rgb(211, 209, 209);
   border: 1px;
   border-radius: 5px;
   margin-bottom: 15px;
@@ -110,6 +110,6 @@
 }
 @media screen and (max-width: 850px) {
   .user-profile-container {
-    margin-left: 0px;
+    margin-left: 10px;
   }
 }

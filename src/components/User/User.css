@@ -12,6 +12,7 @@
 .user-info {
   display: flex;
   width: 250px;
+  cursor: pointer;
 }
 .user-sm-container {
   flex-direction: column;

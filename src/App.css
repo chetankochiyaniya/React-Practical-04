@@ -23,6 +23,21 @@
 .user-profile {
   width: 200px;
 }
+/* Title */
+
+.title {
+  display: flex;
+  font-size: 15px;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.645);
+  font-weight: 600;
+  justify-content: space-evenly;
+  width: 620px;
+}
+.status {
+  margin-left: 79px;
+}
+
 @media screen and (max-width: 850px) {
   .user-list-main-container {
     display: flex;
@@ -30,6 +45,9 @@
   .user-list {
     align-content: center;
     width: 300px;
+  }
+  .title {
+    display: none;
   }
 }
 @media screen and (max-width: 550px) {
@@ -50,23 +68,5 @@
   }
 }
 
-/* Title */
 
-.title {
-  display: flex;
-  font-size: 15px;
-  padding: 5px;
-  color: rgba(0, 0, 0, 0.645);
-  font-weight: 600;
-  justify-content: space-evenly;
-  width: 620px;
-}
-.status {
-  margin-left: 79px;
-}
-@media screen and (max-width: 850px) {
-  .title {
-    display: none;
-  }
-}
 

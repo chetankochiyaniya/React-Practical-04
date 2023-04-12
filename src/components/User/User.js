@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { mouseEnter, mouseLeave } from '../../redux/actions';
 import OtherInfo from './OtherInfo';
@@ -7,18 +7,19 @@ import './User.css';
 function User({user}) {
 
   const dispatch = useDispatch();
+  const [screen,setScreen] = useState(window.innerWidth)
+
 
   useEffect(() => {
     const onResize = () => {
-      dispatch({ type: "SCREEN_RESIZE", screenWidth: window.innerWidth });
+      setScreen(window.innerWidth)
     };
     window.addEventListener("resize", onResize);
     return () => {
       window.removeEventListener("resize", onResize);
     };
-  }, [dispatch]);
+  }, [screen]);
   
-  const screenSize = useSelector((state) => state.screenReducer.screenWidth)
   const { email, first_name, last_name, avatar} = user
   // for hovering effect & displaying card data accordingly
   function handleMouseEnter() {
@@ -31,7 +32,7 @@ function User({user}) {
 
   return (
   <>
-    <div className={screenSize < 850 ? 'user-sm-container' : 'user-container' } >
+    <div className={screen< 850 ? 'user-sm-container' : 'user-container' } >
       
     <div className='user-info' onMouseEnter={ handleMouseEnter } onMouseLeave={ handleMouseLeave }>
       <div className='user-avatar'>
@@ -44,7 +45,7 @@ function User({user}) {
     </div>  
 
       {
-        screenSize < 850 ?
+        screen< 850 ?
         <div className='other-info'>
           <OtherInfo user={user} />
         </div> :
