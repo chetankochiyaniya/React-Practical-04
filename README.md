@@ -3,7 +3,7 @@
 
 #
 
-### For Live demo (part 1: UI and component structure) : 
+### For Live demo (Part : 01 Static UI) : 
 https://react-practical-4-simform.netlify.app/
 
 ### OR
