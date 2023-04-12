@@ -1,0 +1,96 @@
+.user-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 620px;
+}
+.user-sm-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.user-info {
+  display: flex;
+  width: 250px;
+  cursor: pointer;
+}
+.user-sm-container {
+  flex-direction: column;
+  justify-content: center;
+  width: max-content;
+}
+.other-info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 45px;
+}
+.user-avatar img {
+  height: 40px;
+  border: 1px;
+  border-radius: 50%;
+}
+.user-details {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.user-name {
+  color: rgba(0, 0, 0, 0.837);
+}
+.user-email {
+  color: rgba(0, 0, 0, 0.487);
+}
+.user-status select, .user-access select{
+  background-color: rgb(228 228 228 / 38%);
+  /* border: none; */
+  border-color: darkgray;
+  border-radius: 5px;
+  padding: 3px;
+  color: rgba(0, 0, 0, 0.433);
+  font-size: 15px;
+}
+.user-status, .user-access {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.433);
+  cursor: pointer;
+}
+.owner-status {
+  color: rgb(96, 162, 96);
+}
+.icon {
+  color: rgba(0, 0, 0, 0.487);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.user-owner-status{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.433);
+  cursor: pointer;
+  width: 80px;
+  color: rgb(96, 162, 96)
+}
+.user-owner-access{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.433);
+  cursor: pointer;
+  width: 54px;
+}
+
+@media screen and (max-width: 850px) {
+  .user-status select, .user-access select{
+    padding: 1px;
+  }
+}

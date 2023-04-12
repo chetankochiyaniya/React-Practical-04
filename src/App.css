@@ -1,38 +1,72 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(211, 211, 211);
+  padding: 25px;
+  min-height: 100vh;
+  align-items: center;
+}
+.user-list-main-container {
+  background-color: rgb(245, 245, 245);
+  max-width: 900px;
+  padding: 25px;
+  border: 1px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px -8px;
+  display: flex;
+  height: -webkit-fill-available;
+}
+.user-list {
+  max-width: 620px;
+}
+.user-profile {
+  width: 200px;
+}
+/* Title */
+
+.title {
+  display: flex;
+  font-size: 15px;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.645);
+  font-weight: 600;
+  justify-content: space-evenly;
+  width: 620px;
+}
+.status {
+  margin-left: 79px;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 850px) {
+  .user-list-main-container {
+    display: flex;
+  }
+  .user-list {
+    align-content: center;
+    width: 300px;
+  }
+  .title {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .user-list-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .user-list {
+    align-content: center;
+    width: 300px;
+    overflow: auto;
+  }
+  .user-list-sm {
+    height: 250px;
+  }
+  .user-list-container {
+    width: 300px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+

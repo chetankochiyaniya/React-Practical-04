@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
+import { useSelector } from 'react-redux';
+
+import UserList from './components/UserList/UserList';
+import UserProfile from './components/UserProfile/UserProfile';
 import './App.css';
 
 function App() {
+  const userProfileData = useSelector((state) => state.userProfile);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='App container-fluid'>
+        <div className='user-list-main-container'>
+          <div className={userProfileData.length === 0 ? 'user-list' : 'user-list user-list-sm'}>
+            <UserList />
+          </div>
+          <div className='user-profile'>
+            {
+              userProfileData.length !==0 ? <UserProfile userProfileData={userProfileData}/> : ''
+            }
+          </div>
+        </div>
+      </div> 
+    </>
   );
 }
 
