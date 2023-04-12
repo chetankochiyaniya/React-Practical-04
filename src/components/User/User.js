@@ -25,9 +25,11 @@ function User({user}) {
   // for hovering effect & displaying card data accordingly
   function handleMouseEnter() {
     dispatch(mouseEnter(user));
+    setTimeout(()=>{},200)
   }
   function handleMouseLeave() {
     dispatch(mouseLeave(user));
+    setTimeout(()=>{},200)
   }
 
 
@@ -35,7 +37,7 @@ function User({user}) {
   <>
     <div className={screen< 850 ? 'user-sm-container' : 'user-container' } >
       
-    <div className='user-info' onMouseEnter={ handleMouseEnter } onMouseLeave={ handleMouseLeave }>
+    <div className='user-info' onMouseEnter={ handleMouseEnter } onMouseLeave={ handleMouseLeave } onTouchStartCapture={handleMouseEnter} onTouchEndCapture={handleMouseLeave}>
       <div className='user-avatar'>
         <img src={ avatar } alt='user-avatar'/>
       </div>
