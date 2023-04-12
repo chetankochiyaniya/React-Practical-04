@@ -59,6 +59,8 @@ Builds the app for production to the `build` folder.
 
 #
 
+# Mobile View
+
 <pre>
 <img src="https://github.com/chetankochiyaniya/React-Practical-04/blob/ca19c0b6be15e911a6575b8e8250141a71136a47/output/sm-screen-home.jpg" alt="Practical Output Image" width="350px" />       <img src="https://github.com/chetankochiyaniya/React-Practical-04/blob/ca19c0b6be15e911a6575b8e8250141a71136a47/output/sm-screen-touch.jpg" width="350px" alt="Practical Output Image"/>
 </pre>
