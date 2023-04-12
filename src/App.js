@@ -6,7 +6,7 @@ import UserProfile from './components/UserProfile/UserProfile';
 import './App.css';
 
 function App() {
-  const userProfileData = useSelector((state) => state.userListReducer.userProfile);
+  const userProfileData = useSelector((state) => state.userProfile);
   
   return (
     <>

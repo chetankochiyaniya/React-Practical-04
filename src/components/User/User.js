@@ -21,6 +21,7 @@ function User({user}) {
   }, [screen]);
   
   const { email, first_name, last_name, avatar} = user
+  
   // for hovering effect & displaying card data accordingly
   function handleMouseEnter() {
     dispatch(mouseEnter(user));

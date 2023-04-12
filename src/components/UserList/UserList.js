@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import User from '../User/User';
 
 function UserList() {
-  const userDetails = useSelector((state) => state.userListReducer.userDetails)
+  const userDetails = useSelector((state) => state.userDetails)
   return (
     <>
       <div className='title'>
