@@ -4,7 +4,7 @@
   background: rgb(245, 245, 245);
   padding: 30px;
   border: 1px;
-  box-shadow: 5px 5px 10px -7px;
+  box-shadow: 5px 5px 20px -5px;
   border-radius: 25px;
   width: 280px;
   font-weight: 500;
@@ -72,9 +72,19 @@
 }
 .usage {
   height: 5px;
-  background-color: rgb(255, 165, 0);
   border: 1px;
   border-radius: 5px;
+}
+.usage.low {
+  background-color: red;
+}
+
+.usage.medium {
+  background-color: orange;
+}
+
+.usage.high {
+  background-color: green;
 }
 .clicks {
   display: flex;

@@ -10,7 +10,7 @@ function OtherInfo({user}) {
     <div className='user-status'>
       { 
         id === 1 ? 
-          <div className='owner-status'>Active</div> : 
+          <div className='user-owner-status'>Active</div> : 
           <select id="status" name="status">
             <option value="Inactive">Inactive</option>
             <option value="Active">Active</option>
@@ -20,7 +20,7 @@ function OtherInfo({user}) {
     <div className='user-access'>
       {
         id === 1 ?
-        <div>Owner</div> :
+        <div className='user-owner-access'>Owner</div> :
         <select id="access" name="access">
           <option value="manager">Manager</option>
           <option value="read">Read</option>

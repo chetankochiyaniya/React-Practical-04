@@ -19,7 +19,7 @@ function UserProfile({userProfileData}) {
       <div className='user-plan-usage'>Plan Uses</div> 
       {/*Progress Bar*/}
       <div className='progressBar'>
-        <div className='usage' style={{'width': usage+'%'}}></div>
+        <div className={`usage ${usage < 35 ? 'low' : usage < 75 ? 'medium' : 'high'}`} style={{'width': usage+'%'}}></div>
       </div>
       {/* Clicks Count */}
       <div className='clicks'>
